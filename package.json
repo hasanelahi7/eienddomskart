@@ -1,0 +1,27 @@
+{
+  "name": "eienddomskart",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "pinia": "^2.2.8",
+    "maplibre-gl": "^4.7.1",
+    "lucide-vue-next": "^0.469.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.3",
+    "vue-tsc": "^2.1.10",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2",
+    "@types/geojson": "^7946.0.14",
+    "tailwindcss": "^3.4.17",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49"
+  }
+}
