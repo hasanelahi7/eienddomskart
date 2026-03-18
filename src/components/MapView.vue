@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, watch } from 'vue'
+import { ref, shallowRef, onMounted, watch } from 'vue'
 import maplibregl from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { usePropertyStore } from '@/stores/propertyStore'
@@ -7,7 +7,7 @@ import LayerControl from './LayerControl.vue'
 import type { Map } from 'maplibre-gl'
 
 const mapContainer = ref<HTMLElement | null>(null)
-const map = ref<Map | null>(null)
+const map = shallowRef<Map | null>(null)
 const is3DMode = ref(false)
 const propertyStore = usePropertyStore()
 
